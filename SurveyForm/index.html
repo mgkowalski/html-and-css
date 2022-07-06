@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><em>The form in which to be surveyed</em></p>
+  </header>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name: 
+        <input id="name" type="text" placeholder="eg: John Smith" required>
+      </label>
+      <label id="email-label">Email: 
+        <input id="email" type="email" required placeholder="eg: jsmith@email.com">
+      </label>
+      <label id="number-label">Age (optional): 
+        <input id="number" type="number" min="13" max="120" placeholder="eg: 22">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>
+        How often would you like to take this survey?<br>
+        <input type="radio" name="options" value="yearly">
+        Yearly
+      </label>
+      <label>
+        <input type="radio" name="options" value="monthly">
+        Monthly
+      </label>
+      <label>
+        <input type="radio" name="options" value="daily">
+        Daily
+      </label>      
+    
+    </fieldset>
+    <fieldset>
+      <label>My favorite survey is: 
+        <select id="dropdown">
+          <option>
+            (Please select)
+          </option>
+          <option>
+            This one
+          </option>
+          <option>
+            The one here
+          </option>
+          <option>
+            The one I'm doing now
+          </option>
+          <option>
+            All of the above
+          </option>
+          <option>
+            I like turtles
+          </option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      Please check your favorite box (check all that apply): 
+      <label>       
+        <input type="checkbox" value="this">
+        This box is my favorite
+      </label>
+      <label>
+        <input type="checkbox" value="that">
+        That box was my favorite
+      </label>
+      <label>
+        <input type="checkbox" value="another">
+        My heart belongs to another box
+      </label>
+      <label>
+        <input type="checkbox" value="all">
+        I love all boxes equally (after this one)
+      </label>
+      <label>
+        <input type="checkbox" value="none">
+        I am strongly anti-box
+      </label>
+
+    </fieldset>
+    <fieldset>
+      <label>
+        Additional Comments:                            
+        <textarea placeholder="I am passionate about taking this survey because . . ."></textarea>
+      </label>
+    </fieldset>   
+      <label>
+        <input id="submit" type="submit" value="Submit">
+      </label>
+  </form>
+  <footer>
+    123 Survey Lane, Surveyland
+  </footer>
+</body>
+</html>
